@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        style="@style/text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:text="@string/slogan"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/Edt_Account"
+        style="@style/text_normal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_icon_user"
+        android:drawablePadding="@dimen/_13sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:hint="@string/account"
+        android:textSize="@dimen/_15sdp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_68sdp"
+        app:layout_constraintBottom_toTopOf="@+id/Edt_Password"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <EditText
+        android:id="@+id/Edt_Password"
+        style="@style/text_normal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_icon_key"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/password"
+        android:textSize="@dimen/_15sdp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:paddingStart="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_Account" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/spacemono_bold"
+        android:text="@string/save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edt_Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_Signin"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="70dp"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        style="@style/text_normal"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Signin">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="@color/color_nofocus" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  OR  "
+            android:textSize="@dimen/_12sdp"
+            style="@style/text_normal"
+            />
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="@color/color_nofocus" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_Signup"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        style="@style/text_normal"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_button_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

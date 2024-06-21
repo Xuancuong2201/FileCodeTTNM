@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_152sdp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/icon_search"
+        android:paddingStart="@dimen/_10sdp"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_147sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MyCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:src="@drawable/icon_cart"
+            app:tint="@null" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rcv_beverage"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_27sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

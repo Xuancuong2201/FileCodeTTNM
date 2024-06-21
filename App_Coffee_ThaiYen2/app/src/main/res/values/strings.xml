@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App_Coffee_ThaiYen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Trang chủ</string>
+    <string name="Revenue">Doanh thu</string>
+    <string name="User">Người dùng</string>
+    <string name="slogan">I hope you have a wonderful day</string>
+    <string name="account">Nhập tài khoản</string>
+    <string name="save">Ghi nhớ mật khẩu</string>
+    <string name="password">Nhập mật khẩu</string>
+</resources>

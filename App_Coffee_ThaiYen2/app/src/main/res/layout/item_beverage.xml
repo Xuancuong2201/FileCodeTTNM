@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+
+    android:background="@drawable/card_view_border">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_view_border">
+
+        <ImageView
+            android:id="@+id/Img_Beverage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/solar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tv_Name"
+            style="@style/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Solar"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="@+id/Img_Beverage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tv_Description"
+            style="@style/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Seed Arabica"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/Img_Beverage"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Name" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="Popular: "
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/Img_Beverage"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Description" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_117sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:src="@drawable/icon_star"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:src="@drawable/icon_star"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:src="@drawable/icon_star"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:src="@drawable/icon_star"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:src="@drawable/icon_star"
+                android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/Tv_Price"
+                style="@style/text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="30"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/icon_money" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/Tv_Quality"
+                style="@style/text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="6"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/icon_beverage" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/_99sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="Thêm vào giỏ hàng"
+            android:background="@drawable/custom_button_add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
